@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "./logo.svg";
 import fio1 from "./images/fio1.jpg";
 import cat from "./images/cat.png";
@@ -7,7 +6,10 @@ import myCat from "./images/myCat.jpg";
 import gamer from "./images/gamer.jpg";
 import photographer from "./images/photographer.jpeg";
 
+import React from "react";
 import "./App.css";
+import MainMenu from "./menu/MainMenu";
+import { AppFooter } from "./footer/components";
 
 function AppHeader() {
   return (
@@ -33,38 +35,6 @@ function AppHeader() {
       </div>
       <MainMenu />
     </header>
-  );
-}
-
-function MainMenu() {
-  return (
-    <ul id="top-menu-bar">
-      <li>
-        <a href="#" data-page="home">
-          HOME
-        </a>
-      </li>
-      <li>
-        <a href="#" data-page="skills">
-          Skills
-        </a>
-      </li>
-      <li>
-        <a href="#" data-page="languages">
-          Known Languages
-        </a>
-      </li>
-      <li>
-        <a href="#" data-page="photography">
-          Photography
-        </a>
-      </li>
-      <li>
-        <a href="#" data-page="rubik">
-          Rubik
-        </a>
-      </li>
-    </ul>
   );
 }
 
@@ -260,16 +230,6 @@ function SideMenu() {
         <img src={catInverted} alt="poza" id="imageHover" />
       </div>
     </div>
-  );
-}
-
-function AppFooter() {
-  return (
-    <footer className="f">
-      <a className="git" target="_blank" href="https://github.com/fioip/fioip.github.io">
-        GitHub
-      </a>
-    </footer>
   );
 }
 
