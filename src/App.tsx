@@ -1,5 +1,4 @@
 import logo from "./logo.svg";
-import fio1 from "./images/fio1.jpg";
 import cat from "./images/cat.png";
 import catInverted from "./images/cat-inverted.png";
 import myCat from "./images/myCat.jpg";
@@ -8,35 +7,8 @@ import photographer from "./images/photographer.jpeg";
 
 import React from "react";
 import "./App.css";
-import MainMenu from "./menu/MainMenu";
 import { AppFooter } from "./footer/components";
-
-function AppHeader() {
-  return (
-    <header>
-      <div id="header-wrapper">
-        <img src={fio1} alt="profile pic" className="pp" />
-        <div className="header-info">
-          <h1 className="fio">Iuhasz P. Fiona</h1>
-
-          <h2 id="job-title">Student at Ieti - Calculatoare @ photographer @ gamer</h2>
-        </div>
-        <label className="switch">
-          <input
-            type="checkbox"
-            id="remember"
-            onClick={() => {
-              // darkTheme()
-              console.log("To be continued darkTheme()");
-            }}
-          />
-          <span className="slider"></span>
-        </label>
-      </div>
-      <MainMenu />
-    </header>
-  );
-}
+import AppHeader from "./header";
 
 function ContentWrapper() {
   return (
