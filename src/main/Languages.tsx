@@ -1,6 +1,6 @@
 export function Languages() {
   return (
-    <div id="languages" className="page" style={{ display: "block" }}>
+    <div id="languages" className="page">
       <h2 className="page-heading">KNOWN LANGUAGES</h2>
       <table>
         <thead>
