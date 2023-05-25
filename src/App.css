@@ -413,7 +413,8 @@ input:checked + .slider:before {
   color: #fff;
 }
 
-#top-menu-bar a:hover {
+#top-menu-bar a:hover,
+#top-menu-bar a.active {
   color: #0d685e;
   background-color: #fff;
   border-radius: 3px;

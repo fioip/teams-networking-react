@@ -23,7 +23,7 @@ export default function AppHeader() {
           <span className="slider"></span>
         </label>
       </div>
-      <MainMenu />
+      <MainMenu active="teams" />
     </header>
   );
 }

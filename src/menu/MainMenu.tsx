@@ -1,29 +1,33 @@
-export default function MainMenu() {
+type Props = {
+  active: string;
+};
+
+export default function MainMenu(props: Props) {
   return (
     <ul id="top-menu-bar">
       <li>
-        <a href="#" data-page="home">
+        <a href="#" data-page="home" className={props.active === "home" ? "active" : ""}>
           HOME
         </a>
       </li>
       <li>
-        <a href="#" data-page="skills">
+        <a href="#" data-page="skills" className={props.active === "skills" ? "active" : ""}>
           Skills
         </a>
       </li>
       <li>
-        <a href="#" data-page="languages">
+        <a href="#" data-page="languages" className={props.active === "languages" ? "active" : ""}>
           Known Languages
         </a>
       </li>
       <li>
-        <a href="#" data-page="photography">
+        <a href="#" data-page="photography" className={props.active === "photography" ? "active" : ""}>
           Photography
         </a>
       </li>
       <li>
-        <a href="#" data-page="rubik">
-          Rubik
+        <a href="#" data-page="teams" className={props.active === "teams" ? "active" : ""}>
+          Teams
         </a>
       </li>
     </ul>
