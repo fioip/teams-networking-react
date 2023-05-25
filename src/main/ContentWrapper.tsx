@@ -1,5 +1,5 @@
 import { SideMenu } from "../menu/SideMenu";
-import { Teams } from "../teams/Teams";
+import { TeamsTableWrapper } from "../teams/Teams";
 import { HomeComponent } from "./HomeComponent";
 import { Languages } from "./Languages";
 import { SkillsComponent } from "./SkillsComponent";
@@ -21,7 +21,7 @@ export function ContentWrapper() {
           <div>
             <input type="search" name="search" id="search" placeholder="Search" />
           </div>
-          <Teams />
+          <TeamsTableWrapper />
         </div>
 
         <div id="photography" className="page">
