@@ -1,6 +1,6 @@
-import myCat from "./images/myCat.jpg";
-import gamer from "./images/gamer.jpg";
-import photographer from "./images/photographer.jpeg";
+import myCat from "../images/myCat.jpg";
+import gamer from "../images/gamer.jpg";
+import photographer from "../images/photographer.jpeg";
 
 export function HomeComponent() {
   return (
